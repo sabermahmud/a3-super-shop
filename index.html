@@ -26,7 +26,7 @@
 <body class="sora">
     <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3] max-w-7xl mx-auto">
         <!-- NavBar Section -->
-        <nav>
+        <nav class="overflow-x-hidden">
             <div class="navbar border-b-2 border-lime-600 lg:border-none flex justify-between p-4">
                 <div class=" flex justify-between w-full navbar-start">
                     <a class=" justify-start">
@@ -62,7 +62,7 @@
             </div>
         </nav>
         <!-- Hero Section -->
-        <div class="hero min-h-screen ">
+        <div class="hero min-h-screen overflow-x-hidden ">
         <div class="hero-content text-center pb-0">
             <div class="max-w-full ">
             <h1 class="text-3xl lg:text-6xl font-semibold">
@@ -79,7 +79,7 @@
     <!-- main section -->
      <main>
         <!-- service section -->
-         <section class="service max-w-7xl mx-auto my-16">
+        <section class="service max-w-7xl mx-auto my-16 overflow-x-hidden py-15 px-4">
             <h2 class="text-lime-600 text-4xl font-semibold">Service</h2>
             <!-- service-cards-container -->
             <div class="flex flex-col lg:flex-row justify-between items-center gap-4 py-8">
@@ -120,13 +120,12 @@
                     </div>
                 </div>
             </div>
-         </section>
-         <!-- Popular section  -->
-            <section class="popular bg-[#EFEBE3] py-16 px-4 lg:px-36">
-            <div class="max-w-7xl mx-auto">
-                <h2 class="text-2xl font-semibold mb-8">Popular Products</h2>
-
-                <div class="grid grid-cols-1 lg:grid-cols-5 gap-8">
+        </section>
+        <!-- Popular section  -->
+        <section class="popular bg-[#EFEBE3] py-16 px-4 lg:px-36 overflow-x-hidden">
+            <div class="max-w-7xl mx-auto ">
+                <h2 class="text-4xl font-semibold mb-8 text-lime-600">Popular Products</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-5 gap-5">
                 <!-- Left Offer Box -->
                 <div class="col-span-1 lg:col-span-2 bg-gradient-to-br from-lime-600 to-lime-50 rounded-xl text-white pt-6 px-6 pb-0 flex flex-col justify-between">
                     <div>
@@ -241,11 +240,35 @@
                         <p class="text-gray-500">$39.00</p>
                     </div>
                     </div>
-                    <!-- Repeat the above card multiple times as needed -->
                 </div>
                 </div>
             </div>
-            </section>
+        </section>
+        <!-- Arrival & Offers -->
+        <section class="arrival&Offers max-w-7xl mx-auto my-16 overflow-x-hidden ">
+            <h2 class="text-lime-600 text-4xl p-4">Arrival & Offers</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-5 my-12 p-4">
+                <div class="flex flex-row justify-center items-center lg:col-span-3 bg-lime-900 p-5 rounded-lg w-full">
+                    <div class="w-full">
+                        <img src="c2-assets/dawat-logo.png" alt="dawatBrandLogo">
+                        <br>
+                        <a href="#" class="btn bg-lime-500 text-white text-lg py-5">Cook Exotic Dishes</a>
+                        <p class="text-white text-4xl py-5">UP to <span class="font-semibold">20% OFF</span></p>
+                    </div>
+                    <div class="w-full"><img src="c2-assets/dawat-mock-up.png" alt="rice pack"></div>
+                </div>
+                <div class="flex flex-row justify-center items-center lg:col-span-2 bg-[#102861] p-5 rounded-lg w-full">
+                    <div class="w-full">
+                        <img src="c2-assets/india-gate-logo.png" alt="dawatBrandLogo">
+                        <br>
+                        <a href="#" class="btn bg-blue-500 text-white text-lg py-5">World’s No.1 Rice</a>
+                        <p class="text-white text-4xl py-5">UP to <span class="font-semibold">40% OFF</span></p>
+                    </div>
+                    <div class="w-full"><img src="c2-assets/india-gate-mock-up.png" alt="rice pack"></div>
+                </div>
+            </div>
+        </section>
+        
      </main>
 </body>
 </html>
